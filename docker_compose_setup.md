@@ -20,7 +20,7 @@ All services are containerized and hosted in **Docker Hub under a single reposit
 Docker Hub Repository:
 
 ```
-rohanpokale/linkedin_project_images
+nikitajadhav/linkedin_project_images
 ```
 
 ---
@@ -56,12 +56,12 @@ Enter your Docker Hub credentials when prompted.
 Each microservice is stored as a **tag** under a single Docker Hub repository.
 
 ```bash
-docker pull rohanpokale/linkedin_project_images:api-gateway
-docker pull rohanpokale/linkedin_project_images:discovery-service
-docker pull rohanpokale/linkedin_project_images:user-service
-docker pull rohanpokale/linkedin_project_images:connections-service
-docker pull rohanpokale/linkedin_project_images:post-service
-docker pull rohanpokale/linkedin_project_images:notification-service
+docker pull nikitajadhav/linkedin_project_images:api-gateway
+docker pull nikitajadhav/linkedin_project_images:discovery-service
+docker pull nikitajadhav/linkedin_project_images:user-service
+docker pull nikitajadhav/linkedin_project_images:connections-service
+docker pull nikitajadhav/linkedin_project_images:post-service
+docker pull nikitajadhav/linkedin_project_images:notification-service
 ```
 
 Verify pulled images:
@@ -172,7 +172,7 @@ services:
       - linkedin-network
 
   discovery-service:
-    image: rohanpokale/linked-in/discovery-service:0.0.1
+    image: nikitajadhav/linked-in/discovery-service:0.0.1
     container_name: discovery-service
     networks:
       - linkedin-network
@@ -180,7 +180,7 @@ services:
       - "8761:8761"
 
   post-service:
-    image: rohanpokale/linked-in/post-service:0.0.1
+    image: nikitajadhav/linked-in/post-service:0.0.1
     container_name: post-service
     networks:
       - linkedin-network
@@ -190,7 +190,7 @@ services:
       - kafka
 
   user-service:
-    image: rohanpokale/linked-in/user-service:0.0.1
+    image: nikitajadhav/linked-in/user-service:0.0.1
     container_name: user-service
     networks:
       - linkedin-network
@@ -200,7 +200,7 @@ services:
       - kafka
 
   notification-service:
-    image: rohanpokale/linked-in/notification-service:0.0.1
+    image: nikitajadhav/linked-in/notification-service:0.0.1
     container_name: notification-service
     networks:
       - linkedin-network
@@ -210,7 +210,7 @@ services:
       - kafka
 
   connections-service:
-    image: rohanpokale/linked-in/connections-service:0.0.1
+    image: nikitajadhav/linked-in/connections-service:0.0.1
     container_name: connections-service
     networks:
       - linkedin-network
@@ -220,7 +220,7 @@ services:
       - kafka
 
   api-gateway:
-    image: rohanpokale/linked-in/api-gateway:0.0.1
+    image: nikitajadhav/linked-in/api-gateway:0.0.1
     container_name: api-gateway
     ports:
       - "8090:8090"
@@ -296,7 +296,7 @@ docker system prune -a
 
 ## 📌 Author
 
-**Rohan Pokale**\
+**Nikita Jadhav**\
 Dockerized Microservices Project
 
 ---

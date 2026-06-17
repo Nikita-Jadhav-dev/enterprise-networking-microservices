@@ -93,7 +93,7 @@ services:
       - linkedin-network
 
   discovery-service:
-    image: rohanpokale/linked-in/discovery-service:0.0.1
+    image: nikitajadhav/linked-in/discovery-service:0.0.1
     container_name: discovery-service
     networks:
       - linkedin-network
@@ -101,7 +101,7 @@ services:
       - "8761:8761"
 
   post-service:
-    image: rohanpokale/linked-in/post-service:0.0.1
+    image: nikitajadhav/linked-in/post-service:0.0.1
     container_name: post-service
     networks:
       - linkedin-network
@@ -111,7 +111,7 @@ services:
       - kafka
 
   user-service:
-    image: rohanpokale/linked-in/user-service:0.0.1
+    image: nikitajadhav/linked-in/user-service:0.0.1
     container_name: user-service
     networks:
       - linkedin-network
@@ -121,7 +121,7 @@ services:
       - kafka
 
   notification-service:
-    image: rohanpokale/linked-in/notification-service:0.0.1
+    image: nikitajadhav/linked-in/notification-service:0.0.1
     container_name: notification-service
     networks:
       - linkedin-network
@@ -131,7 +131,7 @@ services:
       - kafka
 
   connections-service:
-    image: rohanpokale/linked-in/connections-service:0.0.1
+    image: nikitajadhav/linked-in/connections-service:0.0.1
     container_name: connections-service
     networks:
       - linkedin-network
@@ -141,7 +141,7 @@ services:
       - kafka
 
   api-gateway:
-    image: rohanpokale/linked-in/api-gateway:0.0.1
+    image: nikitajadhav/linked-in/api-gateway:0.0.1
     container_name: api-gateway
     ports:
       - "8090:8090"
@@ -195,7 +195,7 @@ networks:
 #      - linkedin-network
 #
 #  discovery-service:
-#    image: rohanpokale/linked-in/discovery-service:0.0.1
+#    image: nikitajadhav/linked-in/discovery-service:0.0.1
 #    container_name: discovery-service
 #    networks:
 #      - linkedin-network
@@ -203,7 +203,7 @@ networks:
 #      - "8761:8761"
 #
 #  Notification-service:
-#    image: rohanpokale/linked-in/notification-service:0.0.1
+#    image: nikitajadhav/linked-in/notification-service:0.0.1
 #    container_name: notification-service
 #    networks:
 #      - linkedin-network
